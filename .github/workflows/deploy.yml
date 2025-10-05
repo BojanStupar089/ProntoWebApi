@@ -15,7 +15,7 @@ jobs:
         with:
           dotnet-version: 9.0.x
 
-      - run: dotnet build ProntoWebApi/ProntoWebApiS.sln -c Release
+      - run: dotnet build ProntoWebApiS/ProntoWebApiS.sln -c Release
       - run: dotnet publish ProntoWebApi/ProntoWebApiS/ProntoWebApiP.csproj -c Release -o ./publish
 
       - uses: azure/login@v1
